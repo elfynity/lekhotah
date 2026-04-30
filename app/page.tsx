@@ -36,9 +36,14 @@ export default function Home() {
         <h2>Latest Products</h2>
         <Suspense fallback={<ProductsSkeleton />}>
           <ProductsList limit={4} />
-        </Suspense>  
+        </Suspense>
 
-        <Link className="buttonLink center" href="/products"> View All</Link>
+        <div className="takeAbreak"> </div>  
+        
+          <Link className="buttonLink center" href="/products"> View All</Link>
+       
+
+
       </div>{/* wrapper */}
     </div>{/* content-padding */} 
     </>

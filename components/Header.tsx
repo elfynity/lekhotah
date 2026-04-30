@@ -19,10 +19,10 @@ export const Header = () => {
             style={{width:'auto', height:'auto'}}
           />
           
-                    <nav>
-          <Link href="/">Home</Link>
-          <Link href="/products">Products</Link>
-          <Link href="/test">Test</Link>
+          <nav>
+            <Link href="/">Home</Link>
+            <Link href="/products">Products</Link>
+            <Link href="/test">Test</Link>
           </nav>
         </header>
 
