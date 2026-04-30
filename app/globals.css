@@ -1,26 +1,120 @@
-@import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-bg: linear-gradient(#000, #115588);
+  --color-button-link:#555;
+  --color-foreground:#ccc;
+  --font-family-nunito: var(--font-nunito);
+  --color-transparent-dark:rgba(0, 0, 0, 0.3);
+  --font-size-r:clamp(16px, 4vw, 20px); 
+  --line-height-r:clamp(20px, 4vw, 26px); 
+  --font-size-ml:clamp(18px, 4vw, 20px); 
+  --line-height-ml:clamp(22px, 4vw, 26px);   
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-foreground);
+  font-family: var(--font-family-nunito);
+  font-size:var(--font-size-r);
+  margin:0;
+  padding:0;
+}
+
+p{
+  font-size:var(--font-size-r);
+  line-height:var(--line-height-r);
+  margin:10px 0;
+}
+
+img{
+  display:block;
+}
+
+a{
+  text-decoration: none;
+  color:var(--color-foreground);
+}
+
+.site{
+  min-height:90vh;
+}
+
+
+.wrapper{
+  max-width:1155px;
+  margin:0 auto;
+}
+
+.content-padding{
+  padding:30px 0;
+}
+
+.mid-content-padding{
+  padding-bottom:30px;
+}
+
+.buttonLink{
+  background-color: var(--color-foreground);;
+  color:var(--color-button-link);
+  font-weight:700;
+  padding:5px 25px;
+  font-size:var(--font-size-ml);
+}
+
+.center{
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+}
+
+#header-container{
+  padding:15px 0;
+  background-color:#000;
+}
+
+
+
+
+header{
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#logo{
+  max-width:250px;
+  filter:invert(1);
+
+}
+
+
+nav{
+  display:flex;
+  flex-wrap:nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap:25px;
+
+}
+
+nav a{
+  color:white;
+}
+
+nav a:hover{
+  opacity:0.8;
+}
+
+h1{
+  font-size:clamp(30px, 4vw, 40px);
+  line-height:clamp(30px, 4vw, 40px);
+}
+
+footer{
+  background-color:black;
+  padding:15px 0;
+  text-align:center;
 }
