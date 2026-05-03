@@ -41,7 +41,7 @@ export default function ProductGallery(
       <Image 
        
         className={styles.galleryImage}
-        src={IMG_PATH + "/" + galleryFolder + "/" + gallery}
+        src={"/" + galleryFolder + "/" + gallery}
         alt={gallery}
         title={gallery}
         width={600}
