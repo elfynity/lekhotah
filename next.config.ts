@@ -4,10 +4,10 @@ const nextConfig: NextConfig = {
   images: {
 		remotePatterns: [
 			{
-				protocol: 'https',
-				hostname: 'lekhotah.devdesign.co.za',
+				protocol: 'http',
+				hostname: 'devdesign.co.za',
 				port: '',
-				pathname: '/**',
+				pathname: '/json/images/**',
 			},
 		],
 	},
