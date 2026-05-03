@@ -1,11 +1,8 @@
+import { promises as fs } from 'fs';
+import path from 'path';
+
 export async function connectJSON() {
-
-  const res = await fetch('http://devdesign.co.za/json/data.json', { 
-		cache: 'no-store' 
-	});
-
-  if (!res.ok) throw new Error('Failed to connect to JSON');
-	
-	return res.json();  
-
+	const filePath = path.join(process.cwd(), 'public', 'data.json');
+	const jsonData = await fs.readFile(filePath, 'utf8');
+	return JSON.parse(jsonData);
 }

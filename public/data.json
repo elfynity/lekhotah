@@ -1,0 +1,67 @@
+[
+  {
+    "id":"lkt001",
+    "url": "dragonfly-handbag-small",
+    "title": "Dragonfly Case",
+    "description":"Fabric hand-painted on canvas, with black bull denim. Soft and firm padding so the handbag keeps it's shape and has good shockproofing. Very durable coil zip that heals. Fully washable in cold wash and dry out of direct sunlight to preserve the paint colours.",
+    "size": "small",
+    "dimensions": {
+      "width": "", 
+      "height":"", 
+      "diameter":"10 inches",
+      "depth": "2 inches"
+    },
+    "price": 550,
+    "imageFolder": "dragonfly-round-bag",
+    "image": "dragonfly-handbag-front-view.jpg",
+    "gallery":[
+      "dragonfly-case-hanging-up.jpg", 
+      "dragonfly-handbag-back-view.jpg", "dragonfly-case-front-open.jpg"
+    ]
+  },
+  {
+    "id": "lkt002",
+    "url": "ladybug-handbag-carry-case-medium",
+    "title": "Ladybug Case",
+    "description":"A round case that opens all the way around, but has tabs so you can open half way. Soft foam in the interior and medium sized width with shallow depth. Hand painted ladybugs on a neutral tan background.",
+    "size": "medium",
+    "dimensions": {
+      "width": "", 
+      "height":"", 
+      "diameter":"10 inches",
+      "depth": "2 inches"
+    },
+    "price": 750,
+    "imageFolder": "ladybug-round-bag",
+    "image": "ladybug-handbag-front-view.jpg", 
+    "gallery":[
+      "ladybug-handbag-front-view2.jpg", "ladybug-handbag-interior-view.jpg",
+      "ladybug-handbag-closeup.jpg", 
+      "ladybug-handbag-back-view.jpg"
+    ]
+  },
+    {
+    "id": "lkt003",
+    "url": "forest-butterfly-mini-satchel",
+    "title": "Forest Butterfly Mini Satchel Case",
+    "description":"A cute satchel style bag with firm and soft foam to make a semi-rigid case. It has a front zip pocket and a full zip that opens the whole case up. Velcro straps on the side can be used to stop the sliders so just the top part opens. It has a little top handle. It is made from hand painted canvas and black bull denim.",
+    "size": "A5 books fit in comfortably",
+    "dimensions": {
+      "width": "8 inches", 
+      "height":"10 inches", 
+      "diameter":"",
+      "depth": "2 inches"
+    },
+    "price": 950,
+    "imageFolder": "forest-butterfly-case",
+    "image": "forest-butterfly-case-dynamic-front-view.jpeg", 
+    "gallery":[
+    "forest-butterfly-case-back-side.jpeg", "forest-butterfly-case-front-view.jpeg", 
+    "forest-butterfly-case-handle.jpeg", 
+    "forest-butterfly-case-open.jpg", 
+    "forest-butterfly-case-side-velcro.jpeg", 
+    "froest-butterfly-case-exterioir-pocket.jpeg", 
+    "forest-butterfly-case-top-open-view.jpeg"
+    ]
+  }
+]

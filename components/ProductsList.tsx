@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 
 
+
 const Product = ({title, url, imageFolder, image, price}:any) => {
   return (
     <div className={styles.product}>
