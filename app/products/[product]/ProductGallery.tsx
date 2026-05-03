@@ -1,13 +1,12 @@
 'use client';
 import { useState } from "react";
-
 import Image from "next/image";
 import styles from "@/app/products/products.module.css"
 
 
 
 export default function ProductGallery(
-  {galleryImage, galleryFolder}: {galleryImage : string, galleryFolder : string}
+  {galleryImage, galleryFolder}: {galleryImage : string[], galleryFolder : string}
 ) {
 
   const[index, setIndex] = useState(0);
@@ -37,20 +36,33 @@ export default function ProductGallery(
     <button className={styles.nav} onClick={handlePrev}>&laquo;</button>
     
     <div className={styles.galleryImage}>
-      <Image 
-       
-        className={styles.galleryImage}
-        src={"/" + galleryFolder + "/" + gallery}
-        alt={gallery}
-        title={gallery}
-        width={600}
-        height={800}
-        sizes='(max-width:500px) 100vw, 500px'
-        style={{
-          width:'100%',
-          height:'auto',
-        }}
-      />
+
+      {galleryImage.map((img, i) => (
+
+        <Image 
+          key={img}
+          className={styles.galleryImage}
+          src={"/" + galleryFolder + "/" + img}
+          alt={img}
+          title={gallery}
+          width={600}
+          height={800}
+          sizes='(max-width:500px) 100vw, 500px'
+          priority={i === 0}
+          style={{
+            width:'100%',
+            height:'auto',
+            display: i === index ? 'block' : 'none',
+          }}
+        />
+
+      )
+
+    )}
+
+      
+
+
     </div>{/* galleryImages */}
 
 
