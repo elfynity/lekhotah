@@ -2,7 +2,6 @@
 import { useState } from "react";
 
 import Image from "next/image";
-import { IMG_PATH } from '@/lib/config';
 import styles from "@/app/products/products.module.css"
 
 

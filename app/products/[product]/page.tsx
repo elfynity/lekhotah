@@ -1,4 +1,4 @@
-import { SITE_NAME, IMG_PATH  } from "@/lib/config";
+import { SITE_NAME } from "@/lib/config";
 import styles from "@/app/products/products.module.css"
 import { connectJSON } from "@/lib/resJson";
 import AddToCart from './AddToCart';
