@@ -2,7 +2,6 @@ import styles from "@/app/products/products.module.css"
 import { connectJSON } from "@/lib/resJson";
 import Image from "next/image";
 import Link from 'next/link';
-import { IMG_PATH } from '@/lib/config';
 
 
 
@@ -11,7 +10,7 @@ const Product = ({title, url, imageFolder, image, price}:any) => {
     <div className={styles.product}>
       <Link href={"/products/" + url}>
         <Image
-          src={IMG_PATH + "/" + imageFolder + "/" + image}
+          src={"/" + imageFolder + "/" + image}
           alt={title}
           width={300}
           height={400}
