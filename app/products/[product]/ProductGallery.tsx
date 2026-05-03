@@ -44,9 +44,9 @@ export default function ProductGallery(
         src={IMG_PATH + "/" + galleryFolder + "/" + gallery}
         alt={gallery}
         title={gallery}
-        width={0}
-        height={0}
-        sizes='100vw'
+        width={600}
+        height={800}
+        sizes='(max-width:500px) 100vw, 500px'
         style={{
           width:'100%',
           height:'auto',

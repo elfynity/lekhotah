@@ -22,7 +22,6 @@ export const Header = () => {
           <nav>
             <Link href="/">Home</Link>
             <Link href="/products">Products</Link>
-            <Link href="/test">Test</Link>
           </nav>
         </header>
 
