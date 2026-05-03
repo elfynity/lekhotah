@@ -48,7 +48,7 @@ export default function ProductGallery(
           width={600}
           height={800}
           sizes='(max-width:500px) 100vw, 500px'
-          priority={i === 0}
+          priority={i === index || i === index + 1}
           style={{
             width:'100%',
             height:'auto',
