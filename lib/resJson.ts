@@ -1,6 +1,6 @@
 export async function connectJSON() {
 
-  const res = await fetch('https://devdesign.co.za/json/data.json', { 
+  const res = await fetch('http://devdesign.co.za/json/data.json', { 
 		cache: 'no-store' 
 	});
 
