@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="19.999998"
+   id="Layer_1"
+   version="1.1"
+   viewBox="0 0 19.999998 19.999998"
+   width="19.999998"
+   xml:space="preserve"
+   sodipodi:docname="clock.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs9" /><sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.98828125"
+     inkscape:cx="583.8419"
+     inkscape:cy="207.93676"
+     inkscape:window-width="1366"
+     inkscape:window-height="737"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" /><g
+     id="g4"
+     transform="matrix(0.04807692,0,0,0.04807692,-2.3076922,-2.3076922)"><path
+       d="M 256,48 C 141.1,48 48,141.1 48,256 48,370.9 141.1,464 256,464 370.9,464 464,370.9 464,256 464,141.1 370.9,48 256,48 Z m 17,225 H 160 v -17 h 96 V 128 h 17 z"
+       id="path2" /></g></svg>

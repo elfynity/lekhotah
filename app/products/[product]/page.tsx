@@ -1,8 +1,11 @@
 import { SITE_NAME } from "@/lib/config";
 import styles from "@/app/products/products.module.css"
+
 import { connectJSON } from "@/lib/resJson";
-import AddToCart from './AddToCart';
 import ProductGallery from "./ProductGallery";
+import {ProductsList} from "@/components/ProductsList";
+import { Suspense } from 'react';
+import ProductsSkeleton from '@/app/products/ProductsSkeleton';
 
 
 
@@ -47,74 +50,84 @@ export default async function SingleProduct({
 
   return (
   <>
-  <div className="wrapper content-padding">
+  <div className="wrapper">
 
-    <div className={styles.singleProduct}>
+    <div className="content-padding">
+      <div className={styles.singleProduct}>
 
-      
-      <div className={styles.singleMain}>
-
-        <div className={styles.image}>
-
-          <ProductGallery galleryImage={singleProduct.gallery} galleryFolder={singleProduct.imageFolder} />
         
-        </div>
+        <div className={styles.singleMain}>
 
-        <div className={styles.description}>
-          <h1>{singleProduct.title}</h1>
+          <div className={styles.image}>
+
+            <ProductGallery galleryImage={singleProduct.gallery} galleryFolder={singleProduct.imageFolder} />
           
+          </div>
 
-          <div className={styles.sizes}>
-            <p><span>Size: </span> 
-              {singleProduct.size}
+          <div className={styles.description}>
+            <h1>{singleProduct.title}</h1>
+            
+
+            <div className={styles.sizes}>
+              <p><span>Size: </span> 
+                {singleProduct.size}
+              </p>
+              
+              {singleProduct.dimensions.width && (
+                <p><span>Width: </span>
+                  {singleProduct.dimensions.width}
+                </p>
+              )}
+              
+              {singleProduct.dimensions.height && (
+                <p><span>Height: </span> 
+                  {singleProduct.dimensions.height}
+                </p>
+              )}
+
+              {singleProduct.dimensions.diameter && (
+                <p><span>Diameter: </span> 
+                  {singleProduct.dimensions.diameter}
+                </p>
+              )}
+
+              {singleProduct.dimensions.depth && (
+                <p><span>Depth: </span> 
+                  {singleProduct.dimensions.depth}
+                </p>
+              )}
+            </div>{/* sizes */}  
+                      
+
+            <p className={styles.price}>
+              R{singleProduct.price}
             </p>
             
-            {singleProduct.dimensions.width && (
-              <p><span>Width: </span>
-                {singleProduct.dimensions.width}
-              </p>
-            )}
-            
-            {singleProduct.dimensions.height && (
-              <p><span>Height: </span> 
-                {singleProduct.dimensions.height}
-              </p>
-            )}
-
-            {singleProduct.dimensions.diameter && (
-              <p><span>Diameter: </span> 
-                {singleProduct.dimensions.diameter}
-              </p>
-            )}
-
-            {singleProduct.dimensions.depth && (
-              <p><span>Depth: </span> 
-                {singleProduct.dimensions.depth}
-              </p>
-            )}
-          </div>{/* sizes */}  
-                    
-
-          <p className={styles.price}>
-            R{singleProduct.price}
-          </p>
+            <p>{singleProduct.description}</p>
           
-          <p>{singleProduct.description}</p>
-        
 
-          {/*<AddToCart product={singleProduct} />*/}
+            {/*<AddToCart product={singleProduct} />*/}
 
-        </div>{/* description */} 
-      </div>{/* singleMain */}
+          </div>{/* description */} 
+        </div>{/* singleMain */}
 
 
+      </div>{/* single-product */}
+    </div>{/* content-padding */}    
 
 
 
-    </div>{/* single-product */}  
-      
+    <div className="content-padding">
+      <Suspense fallback={<ProductsSkeleton />}>
+        <ProductsList  limit={4}/>
+      </Suspense> 
+    </div>  
+
+
+
 
   </div>{/* wrapper */}
+  
   </>
   );
 }

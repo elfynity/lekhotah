@@ -4,17 +4,20 @@ p.red{
 
 .products{
   display:flex;
-  flex-wrap:nowrap;
+  flex-wrap:wrap;
   gap:25px;
 }
 
 
 .product{
-  flex:0 1 300px;
+  flex:1 1 200px;
+  max-width:450px;
+
 }
 
 .product img{
   border-radius:10px;
+  width:100%;
 }
 
 .product .description{
@@ -36,13 +39,19 @@ p.red{
 
 .singleProduct .singleMain{
   display:flex;
+  flex-wrap: wrap;
+  justify-content:center;
   gap:25px;
   position:relative;
   margin-bottom:15px;
 }
 
 .singleProduct .singleMain .image {
-  flex: 0 0 500px;
+  flex: 0 1 500px;
+}
+
+.singleProduct .singleMain .description{
+  flex:1 0 300px;
 }
 
 .singleProduct .description{
@@ -145,5 +154,14 @@ p.red{
   to{
     opacity:0.6;
   }
+}
+
+
+
+
+
+@media only screen  
+and (max-width : 1200px) {
+
 }
 

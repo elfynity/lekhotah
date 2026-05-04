@@ -1,0 +1,17 @@
+#contactLinks{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-top:20px;
+}
+
+.contactLink{
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  gap:20px;
+}
+
+.contactLink img{
+  filter:invert(1);
+}

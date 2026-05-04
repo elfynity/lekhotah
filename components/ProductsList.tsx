@@ -13,8 +13,13 @@ const Product = ({title, url, imageFolder, image, price}:any) => {
         <Image
           src={"/" + imageFolder + "/" + image}
           alt={title}
-          width={300}
-          height={400}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{
+            width:'100%',
+            height:'auto',
+          }}
         />
         <div className={styles.description}>
           <h3>{title}</h3>
