@@ -110,6 +110,7 @@ p.red{
   font-size:50px;
   cursor:pointer;
   flex: 0 1 30px;
+  max-width:30px;
   overflow: hidden; 
 }
 
@@ -164,16 +165,6 @@ p.red{
 
 @media only screen  
 and (max-width : 1200px) {
-
-}
-
-
-@media only screen  
-and (max-width : 768px) {
-
-  .galleryImageContainer button.nav{
-    display:none;
-  }
 
 }
 
