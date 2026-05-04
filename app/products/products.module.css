@@ -109,6 +109,8 @@ p.red{
   opacity:0.8;
   font-size:50px;
   cursor:pointer;
+  flex: 0 1 30px;
+  overflow: hidden; 
 }
 
 .galleryImageContainer button.nav:hover{
